@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>MoleUp</title>
+</head>
+<body>
+  <h1>🧪 MoleUp</h1>
+  <p>How many moles in 44 g of CO₂?</p>
+  <input type="number" id="ans" placeholder="Enter moles">
+  <button onclick="check()">Check</button>
+  <p id="result"></p>
+
+  <script>
+    function check(){
+      document.getElementById("result").innerText =
+        document.getElementById("ans").value == 1 ? "Correct 🎉" : "Try Again ❌";
+    }
+  </script>
+</body>
+</html>
